@@ -1,0 +1,4 @@
+FROM eclipse-temurin:17-jdk-alpine
+VOLUME /tmp
+COPY target/API-Gateway-0.0.1-SNAPSHOT.jar CloudApiGateway.jar
+ENTRYPOINT ["java","-jar","CloudApiGateway.jar"]
